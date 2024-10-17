@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+        }
+
+        .bg-light-blue {
+            background-color: #007bff;
+        }
+
+        .info-card {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* New background color for the form */
+        .form-bg {
+            background-color: Lightgray;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Line to show a different block separation */
+        .section-separator {
+            border-bottom: 2px solid #dee2e6;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Profile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-light-blue text-white text-center py-5">
+        <div class="container">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img mb-3">
+            <h1>Chirag Choudhary</h1>
+            <p>Full Stack Developer | Software Engineer</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>I am a passionate full stack developer with experience in building web applications using modern technologies like 
+                        React, Node.js, and Python. My focus is on creating scalable, efficient, and visually appealing applications.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>B.E in Information Technology - Vivekanand Educational Society's Institute of Technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">My Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card info-card p-3 mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Frontend Development</h5>
+                            <p class="card-text">HTML, CSS, JavaScript, React, Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card info-card p-3 mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Backend Development</h5>
+                            <p class="card-text">Node.js, Express.js, Python, Django</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card info-card p-3 mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Databases & Tools</h5>
+                            <p class="card-text">MySQL, MongoDB, Git, Docker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Line Separator -->
+    <div class="section-separator"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> <a href="mailto:chiragchoudhary170@gmail.com">chiragchoudhary170@gmail.com</a></p>
+                        <p><strong>Phone:</strong> +91 (234) 567-890</p>
+                        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/chirag" target="_blank">linkedin.com/in/chirag</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form class="form-bg">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Chirag Choudhary. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.profile-header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.company-name {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.company-tagline {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Profile Info */
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.profile-details, .profile-contact {
+    width: 48%;
+}
+
+.profile-details h2, .profile-contact h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #2980b9;
+}
+
+.profile-details p, .profile-contact ul li {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Links Styling */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.profile-footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Rounded Borders */
+.profile-container, .profile-info div, .profile-footer {
+    border-radius: 10px;
+}
+
+/* Pseudo Elements */
+.profile-header h1::before {
+    content: "🏛️ ";
+    font-size: 1.5em;
+    vertical-align: middle;
+    color: #3498db;
+}
+
+/* Pseudo Classes */
+.profile-details:hover {
+    background-color: #ecf0f1;
+    transition: background-color 0.3s ease;
+}
+
+.profile-contact ul li::before {
+    content: "📍 ";
+    color: #e74c3c;
+}

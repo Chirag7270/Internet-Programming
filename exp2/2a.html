@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Home Page</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background-image: url('logo.png'); /* Replaces img tag */
+            background-size: 150px auto;
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin-left: 170px; /* Adjust for logo */
+            font-size: 2em;
+            color: #2c3e50;
+        }
+
+        /* Company Information */
+        .company-info {
+            margin: 20px;
+        }
+
+        .company-info h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #2980b9;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .info-grid div {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        /* Services Section */
+        .services {
+            margin: 20px;
+        }
+
+        .services h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .services ul {
+            list-style: none; /* Remove bullet points */
+        }
+
+        .services ul li {
+            background: #bdc3c7;
+            margin-bottom: 8px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .services ul li::before {
+            content: "✔️"; /* Adding an icon instead of list bullets */
+            margin-right: 10px;
+            color: #2ecc71;
+        }
+
+        /* Multimedia Section */
+        .multimedia {
+            margin: 20px;
+        }
+
+        .multimedia h2 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: #fff;
+            border-top: 5px solid #2980b9;
+        }
+
+        .footer h2::after {
+            content: ' 🔗'; /* Adding link icon via CSS */
+        }
+
+        .footer p {
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr; /* Make info grid single column on smaller screens */
+            }
+
+            .header {
+                background-size: 100px auto; /* Resize logo on smaller screens */
+                padding: 15px;
+            }
+
+            .header h1 {
+                margin-left: 120px;
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Welcome to [Company Name]</h1>
+    </header>
+
+    <!-- Company Information Section -->
+    <section class="company-info">
+        <h2>About Us</h2>
+        <div class="info-grid">
+            <div><strong>Company Name:</strong> [Company Name]</div>
+            <div><strong>Address:</strong> [Company Address]</div>
+            <div><strong>Contact:</strong> [Company Contact Information]</div>
+            <div><strong>Description:</strong> [Brief Description of the Company]</div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Service 1</li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+            <li>Service 4</li>
+        </ul>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section class="multimedia">
+        <h2>Introduction Audio</h2>
+        <audio controls>
+            <source src="introduction.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Promotional Video</h2>
+        <video width="320" height="240" controls>
+            <source src="promo_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <h2>Connect with Us</h2>
+        <p>&copy; 2024 [Company Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
