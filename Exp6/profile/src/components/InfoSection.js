@@ -19,7 +19,7 @@ function InfoSection() {
         </div>
 
         {/* Skills Section */}
-        <div className="section-separator mb-5"></div> {/* Separator for styling */}
+        <div className="section-separator mb-5"></div>
 
         <div className="row mb-5">
           <h2 className="text-center mb-5">My Skills</h2>
@@ -50,7 +50,7 @@ function InfoSection() {
         </div>
 
         {/* Contact Section */}
-        <div className="section-separator mb-5"></div> {/* Another separator for styling */}
+        <div className="section-separator mb-5"></div> 
 
         <div className="row">
           <div className="col-md-6">

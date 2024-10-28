@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Header />
-      <InfoSection />  {/* The new merged section */}
+      <InfoSection />
       <Footer />
     </div>
   );
